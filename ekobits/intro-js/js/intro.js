@@ -55,11 +55,33 @@ if(firstvariable){
 /*1. this gives us "third" because it has a value unlike secondvariable*/
 /* 2. firstvariable value is 'undefined' */
 /** 3. Is the value of firstvariable a "truthy" value? Why?
- * it is a falsy value because it is not true when compared to others
+ * it is a falsy value because it is UNDEFINED
  * 4. Is the value of secondvariable a "truthy" value? Why?
- * no, it is a falsy since the answer is not that
+ * no, it is a falsey IT IS EMPTY
  * 5. Is the value of thirdvariable a "truthy" value? Why?
- * yes, it is a truthy value since it is the answer
+ * yes, it is a truthy value since it HAS A VALUE
  */
+
+ if (Math.random() > 0.5) {
+    console.log('Over 0.5') ;
+ }
+ else{
+     console.log('Under 0.5');
+ }
+
+ /**
+  * LIST OF FALSEY VALUES
+  * 
+  *     false	The keyword false
+        0	The number zero
+        -0	The number negative zero
+        0n	BigInt, when used as a boolean, follows the same rule as a Number. 0n is falsy.
+        ""	
+        Empty string value
+
+        null	null - the absence of any value
+        undefined	undefined - the primitive value
+        NaN	NaN - not a number
+  */
 
 
